@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>College Life Planner</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <header class="app-header">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">CP</div>
+        <div>
+          <h1>College Life Planner</h1>
+          <p>Study smarter, balance campus life, plan what comes next.</p>
+        </div>
+      </div>
+      <span class="model-pill">GLM-4-Flash</span>
+    </header>
+
+    <section id="messages" class="messages" aria-live="polite" aria-label="Chat messages">
+      <div class="msg msg--assistant">
+        <div class="msg-avatar" aria-hidden="true">AI</div>
+        <div class="bubble">
+          <p>Hi! I'm your college-life planning assistant. Ask me about semester planning, study routines, clubs, internships, or budgeting.</p>
+        </div>
+      </div>
+
+      <div id="suggestions" class="suggestions">
+        <button type="button" class="chip">Build a weekly study schedule</button>
+        <button type="button" class="chip">How do I balance clubs and coursework?</button>
+        <button type="button" class="chip">Plan my internship search this semester</button>
+        <button type="button" class="chip">Make a simple student budget</button>
+      </div>
+    </section>
+
+    <form id="chat-form" class="composer" autocomplete="off">
+      <label class="sr-only" for="chat-input">Your message</label>
+      <textarea
+        id="chat-input"
+        rows="1"
+        maxlength="4000"
+        placeholder="Ask about classes, time, money, or your future..."
+      ></textarea>
+      <button id="send-btn" type="submit" class="send-btn">
+        <span class="send-label">Send</span>
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
+          <path d="M3.4 20.4 21 12 3.4 3.6 3.4 10.4 15.6 12 3.4 13.6z" fill="currentColor" />
+        </svg>
+      </button>
+    </form>
+    <p class="composer-hint">Press Enter to send · Shift + Enter for a new line</p>
+  </main>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "college-life-planner",
+  "version": "1.0.0",
+  "private": true,
+  "description": "College-life planning assistant powered by Zhipu GLM-4-Flash via a Netlify Function.",
+  "scripts": {
+    "dev": "netlify dev"
+  },
+  "devDependencies": {
+    "netlify-cli": "^17.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
